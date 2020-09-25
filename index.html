@@ -1,135 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <!-- SEO = Básico -->
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- SEO = Redes Sociales -->
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+<head>
+  <meta charset="utf-8" />
+  <!-- SEO = Básico -->
+  <title></title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
-    <link rel="manifest" href="site.webmanifest" />
-    <!-- icono de acceso para IOS -->
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+  <!-- SEO = Redes Sociales -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
 
-    <!-- links de estilos -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <!-- Se cambia el tema de algunos navegadores -->
-    <meta name="theme-color" content="#fafafa" />
-  </head>
-  <body>
-    <!-- *** ESTRUCTURA SEMÁNTICA *** -->
-    <!-- Header (encabezado de la página, zona superior) -->
-    <header>
-      <picture>
-        <!-- movil -->
-        <!-- ya vemos aqui como las imagenes que hemos guardado con calidad diferente
+  <!-- App Web, inidicar al navegador que elementos mostrar en un JSON -->
+  <link rel="manifest" href="site.webmanifest" />
+  <!-- icono de acceso para IOS -->
+  <link rel="apple-touch-icon" href="icon.png" />
+  <!-- Recordar que favicon.ico tiene que estar en el directorio inicial -->
+
+  <!-- links de estilos -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- Se cambia el tema de algunos navegadores -->
+  <meta name="theme-color" content="#fafafa" />
+</head>
+
+<body>
+  <!-- *** ESTRUCTURA SEMÁNTICA *** -->
+  <!-- Header (encabezado de la página, zona superior) -->
+  <header>
+    <picture>
+      <!-- movil -->
+      <!-- ya vemos aqui como las imagenes que hemos guardado con calidad diferente
         para cada pantalla, y el sabe con el 1x 2x y 3x la calidad de cada pantalla -->
-        <source srcset="" media=" (min-width:0px) and (max-width:767px) and (orientation:portrait)"/>
-    
-        <!-- Ipad -->
-        <source srcset="img/tablet/banner.jpg 1x,
-                        img/tablet/banner@2x.jpg 2x" media="(min-width:768px) and (max-width:900px)"/>
-    
-        <!-- Escritorio -->
-        <source srcset="" media="(min-width:1000px) and (max-width:1366px)">
-    
-        <!-- Escritorio grande -->
-        <source srcset="" media="(min-width:1367px)">
-    
-        <!-- imagen de respaldo -->
-        <img src="" alt="">
-      </picture>
-  
+      <source srcset="img/smartphone/banner.jpg 1x,
+        img/smartphone/banner@2x.jpg 2x,
+        img/smartphone/banner@3x.jpg 3x" media="(min-width:320px) and (max-width:450px) and (orientation:portrait)" />
 
-    </header>
+      <!-- Ipad -->
+      <source srcset="img/tablet/banner.jpg 1x,
+                        img/tablet/banner@2x.jpg 2x" media="(min-width:768px) and (max-width:1024px)" />
 
-<main>
-  <h1>Ayúdamos a crear tu desayuno </h1>
-  <h1>PERFECTO!</h1>
- <form name="desayuno" method="POST" data-netlify="true">
-
- <label for="hora">A que hora te gusta desayunar?</label>
- <input type="time" name="hora">
-
- <label for="lugar">Donde prefieres tomar el desayuno?</label>
-
- <ul>
-  <li><input type="checkbox" name="lugar" value="cocina"> En la cocina
-   <li> <input type="checkbox" name="lugar" value="salón"> En el salón</li>
-   <li> <input type="checkbox" name="lugar" value="terraza"> En la terraza</li>
-   <li> <input type="checkbox" name="lugar" value="cama"> En la cama</li>
-</ul>
-
-<label for="tiempo">Cuánto tiempo dedicas a tomar el desayuno</label>
-<select name="tiempo" id="">
-  <option value="menos15">Menos de 15 min</option>
-  <option value="menos30">Entre 15 min y 30 min</option>
-  <option value="masde30">Más de 30 min</option>
-  </select>
+      <!-- Escritorio -->
+      <source srcset="img/desktop/bannerHuevo.jpg 1x,
+        img/desktop/bannerHuevo@2x.jpg 2x" media="(min-width:1025px) ">
 
 
- <label for="cafe">Tomás cafe todas las mañanas?</label>
- <select name="cafe" id="">
-  <option value="si"> Sí</option>
-  <option value="no"> No</option>
-  <option value="en Ocasiones">En ocasiones</option>
-  <input type="text" placeholder="Si no tomas café, cuéntanos que tomas">
-</select>
 
-  <label for="azucar">En caso de que tomes café, con que edulcorante lo tomas?</label>
-  <input type="text" name="azucar" placeholder="azucar blanco, moreno, panela, stevia...">
-
-  <label for="complemento">Con que prefieres acompañar tu desayuno?</label>
-  <ul>
-  <li><input type="radio" name="complemento" value="dulce"> Salado</li>
-  <li><input type="radio" name="complemento" value="Salado"> Dulce</li>
-</ul>
-
-  <label for="tostada">Comes tostadas en tu desayuno?</label>
-  <select name="tostada" id="">
-    <option value="si">Sí</option>
-    <option value="no">No</option>
-    <option value="en Ocasiones">En ocasiones</option>
-    </select>
-
-    <label for="tostada_conque">Con que te gusta tomar las tostadas?</label>
-    <ul>
-    <li><input type="checkbox" name="tostada_conque" value="mermelada"> Mermelada</li>
-    <li><input type="checkbox" name="tostada_conque" value="tomate rayado"> Tomate rayado</li>
-    <li><input type="checkbox" name="tostada_conque" value="aceite"> Aceite y sal</li>
-    <li><input type="checkbox" name="tostada_conque" value="embutido"> Embutido</li>
-  </ul>
-
-  <label for="americado">Prefieres el desayuno estilo americano?</label>
-  <input type="text" >
-
-  <label for="escribir">Cuéntamos que te gustaria incluir en el desayuno americano</label>
-  <textarea name="escrbir" id="" cols="30" rows="10" placeholder="huevos, bacon, tortitas, beans..."></textarea>
-<section class="botones">
-  <button class="enviar" type="submit">Enviar</button>
-  <button class="borrar" type="reset">Borrar</button>
-</section>
-</form>
+      <!-- imagen de respaldo -->
+      <img src="img/desktop/banner.jpg" alt="">
+    </picture>
 
 
-</main>
+  </header>
 
-    <!-- Footer (final de la página, zona inferior) -->
-    <footer>
+  <main>
+    <h1>Ayúdamos a crear tu desayuno </h1>
+    <h1>PERFECTO!</h1>
+    <form name="desayuno" method="POST" data-netlify="true">
 
-    </footer>
+      <label for="hora">A que hora te gusta desayunar?</label>
+      <input type="time" name="hora">
 
-    <!-- *** Google Analytics *** -->
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
-  </body>
+      <label for="lugar">Donde prefieres tomar el desayuno?</label>
+
+      <ul>
+        <li><input type="checkbox" name="lugar" value="cocina"> En la cocina
+        <li> <input type="checkbox" name="lugar" value="salón"> En el salón</li>
+        <li> <input type="checkbox" name="lugar" value="terraza"> En la terraza</li>
+        <li> <input type="checkbox" name="lugar" value="cama"> En la cama</li>
+      </ul>
+
+      <label for="tiempo">Cuánto tiempo dedicas a tomar el desayuno</label>
+      <select name="tiempo" id="">
+        <option value="menos15">Menos de 15 min</option>
+        <option value="menos30">Entre 15 min y 30 min</option>
+        <option value="masde30">Más de 30 min</option>
+      </select>
+
+
+      <label for="cafe">Tomás cafe todas las mañanas?</label>
+      <select name="cafe" id="">
+        <option value="si"> Sí</option>
+        <option value="no"> No</option>
+        <option value="en Ocasiones">En ocasiones</option>
+        <input type="text" placeholder="Si no tomas café, cuéntanos que tomas">
+      </select>
+
+      <label for="azucar">En caso de que tomes café, con que edulcorante lo tomas?</label>
+      <input type="text" name="azucar" placeholder="azucar blanco, moreno, panela, stevia...">
+
+      <label for="complemento">Con que prefieres acompañar tu desayuno?</label>
+      <ul>
+        <li><input type="radio" name="complemento" value="dulce"> Salado</li>
+        <li><input type="radio" name="complemento" value="Salado"> Dulce</li>
+      </ul>
+
+      <label for="tostada">Comes tostadas en tu desayuno?</label>
+      <select name="tostada" id="">
+        <option value="si">Sí</option>
+        <option value="no">No</option>
+        <option value="en Ocasiones">En ocasiones</option>
+      </select>
+
+      <label for="tostada_conque">Con que te gusta tomar las tostadas?</label>
+      <ul>
+        <li><input type="checkbox" name="tostada_conque" value="mermelada"> Mermelada</li>
+        <li><input type="checkbox" name="tostada_conque" value="tomate rayado"> Tomate rayado</li>
+        <li><input type="checkbox" name="tostada_conque" value="aceite"> Aceite y sal</li>
+        <li><input type="checkbox" name="tostada_conque" value="embutido"> Embutido</li>
+      </ul>
+
+      <label for="americado">Prefieres el desayuno estilo americano?</label>
+      <input type="text">
+
+      <label for="escribir">Cuéntamos que te gustaria incluir en el desayuno americano</label>
+      <textarea name="escrbir" id="" cols="30" rows="10" placeholder="huevos, bacon, tortitas, beans..."></textarea>
+      <section class="botones">
+        <button class="enviar" type="submit">Enviar</button>
+        <button class="borrar" type="reset">Borrar</button>
+      </section>
+    </form>
+
+
+  </main>
+
+  <!-- Footer (final de la página, zona inferior) -->
+  <footer>
+
+  </footer>
+
+  <!-- *** Google Analytics *** -->
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
 </html>
