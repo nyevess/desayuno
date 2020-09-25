@@ -4,11 +4,30 @@
 
 /* Tipografía */
 @font-face {
-    font-family: "";
-    src: url("") format("woff2"),
-         url("") format("woff");
+    font-family: "caviar_dream";
+    src: url("../font/caviar_dream.woff2") format("woff2"),
+         url("../font/caviar_dream.woff") format("woff");
 }
 
+@font-face {
+    font-family: "caviar_dream_bold";
+    src: url("../font/caviar_dream_bold.woff2") format("woff2"),
+         url("../font/caviar_dream_bold.woff") format("woff");
+}
+
+
+:root{
+    --color-boton:#B7A99A;
+    --color-fuente-form: #402E32;
+    --color-blanco: #f4f4f4;
+
+    --fuente-principal:"caviar_dream";
+    --fuente-negrita:"caviar_dream_bold";
+
+
+    --radius: 10px;
+    --padding-general: 20px;
+}
 /* ******************************** */
 
 /* Colores */

@@ -2,3 +2,83 @@
 /* *** Estilos SOLO para index.html *** */
 /* *********************************** */
 
+body{
+    background: linear-gradient(to right top, #ee983b, #eeb35c, #efcc81, #f3e3a9, #fbf8d3);
+    font-family: var(--fuente-principal);
+   
+}
+
+/* HEADER */
+
+/* tamaño imagen y borde*/
+img{
+    width: 100vw;
+    border-radius:0 0 10px 10px ;
+    border-bottom:px solid white;
+}
+
+
+/* MAIN */
+
+/* padding para main  */
+main{
+    padding: var(--padding-general);
+}
+
+/*disposicion de formulario
+para que quede una pregunta debajo de la otra  */
+form{
+    display:flex;
+    flex-direction: column;
+    border: 2px double var(--color-blanco);
+    border-radius: var(--radius);
+    padding: var(--padding-general);
+    color:var(--color-fuente-form) ;
+}
+
+h1{
+    color: var(--color-blanco);
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+/* le quitamos el puntito a los li */
+ul{
+    list-style: none;
+}
+
+label{
+    margin-bottom: 15px;
+    font-family: var(--fuente-negrita);
+    font-size: 16px;
+}
+input, option, select, textarea{
+    margin-bottom: 15px;
+    border:0;
+    padding: 10px;
+    border-radius: var(--radius);
+}
+
+.botones{
+    display: flex;
+
+}
+button{
+    border: 1px solid white;
+    margin: 15px;
+    padding: var(--padding-general);
+    border-radius: var(--radius);
+
+    background-color:var(--color-boton);
+    font-family: var(--fuente-negrita);
+    color: var(--color-blanco);
+    font-size: 20px;
+       
+}
+
+.enviar{
+    flex-grow: 3;
+}
+.borrar{
+    flex-grow: 1;
+}
