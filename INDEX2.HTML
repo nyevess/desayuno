@@ -1,0 +1,22 @@
+<header>
+    <picture>
+      <!-- movil -->
+      <!-- ya vemos aqui como las imagenes que hemos guardado con calidad diferente
+        para cada pantalla, y el sabe con el 1x 2x y 3x la calidad de cada pantalla -->
+      <source srcset="img/smartphone/banner.jpg 1x,
+        img/smartphone/banner@2x.jpg 2x,
+        img/smartphone/banner@3x.jpg 3x" media="(min-width:320px) and (max-width:450px) and (orientation:portrait)" />
+
+      <!-- Ipad -->
+      <source srcset="img/tablet/banner.jpg 1x,
+                        img/tablet/banner@2x.jpg 2x" media="(min-width:768px) and (max-width:1024px)" />
+
+      <!-- Escritorio -->
+      <source srcset="img/desktop/bannerHuevo.jpg 1x,
+        img/desktop/bannerHuevo@2x.jpg 2x" media="(min-width:1025px) ">
+
+
+
+      <!-- imagen de respaldo -->
+      <img src="img/desktop/banner.jpg" alt="">
+    </picture>

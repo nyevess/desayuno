@@ -60,7 +60,7 @@
   <main>
     <h1>Ayúdanos a crear tu desayuno </h1>
     <h1>PERFECTO!</h1>
-    <form name="desayuno" method="POST" data-netlify="true">
+    <form name="desayuno" method="POST" action="formulario.php" data-netlify="true">
 
       <label for="hora">A que hora te gusta desayunar?</label>
       <input type="time" name="hora">
@@ -114,8 +114,8 @@
         <li><input type="checkbox" name="tostada_conque" value="embutido"> Embutido</li>
       </ul>
 
-      <label for="americado">Prefieres el desayuno estilo americano?</label>
-      <input type="text">
+      <label for="americano">Prefieres el desayuno estilo americano?</label>
+      <input type="text" name="americano">
 
       <label for="escribir">Cuéntanos que te gustaria incluir en el desayuno americano</label>
       <textarea name="escrbir" id="" cols="30" rows="10" placeholder="huevos, bacon, tortitas, beans..."></textarea>
