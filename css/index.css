@@ -14,7 +14,6 @@ body{
 img{
     width: 100vw;
     border-radius:0 0 10px 10px ;
-  
 }
 
 
@@ -30,12 +29,14 @@ para que quede una pregunta debajo de la otra  */
 form{
     display:flex;
     flex-direction: column;
-    border: 2px double var(--color-blanco);
+    border: 2px solid var(--color-blanco);
     border-radius: var(--radius);
     padding: var(--padding-general);
     color:var(--color-fuente-form) ;
+   
 }
 
+/* titulo formulario */
 h1{
     color: var(--color-blanco);
     text-align: center;
@@ -47,11 +48,15 @@ ul{
     list-style: none;
 }
 
+/* margen inferior y fuente de preguntas formulario */
+
 label{
     margin-bottom: 15px;
     font-family: var(--fuente-negrita);
     font-size: 16px;
 }
+
+/* margen inferior y bordes respuestas */
 input, option, select, textarea{
     margin-bottom: 15px;
     border:0;
@@ -59,10 +64,14 @@ input, option, select, textarea{
     border-radius: var(--radius);
 }
 
+
+/* section para distribuir el espacio a los
+botones */
 .botones{
     display: flex;
-
 }
+
+
 button{
     border: 1px solid white;
     margin: 15px;
